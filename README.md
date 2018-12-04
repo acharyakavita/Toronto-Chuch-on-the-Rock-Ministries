@@ -1,4 +1,4 @@
-# Toronto-Chuch-on-the-Rock-Ministries
+# Toronto-Church-on-the-Rock-Ministries
 
 This is a live project to build a Website for Toronto Church on the Rock Minitries.
 This project is written using HTML5,CSS,jQuery and Javascript ES6.
