@@ -1,0 +1,411 @@
+/*Css code for Church website*/
+
+body {
+    width: 100%;
+    height: 100%;
+    margin:0;
+    font-family: 'Chakra Petch', sans-serif;
+    background: linear-gradient(180deg, #4b814c 0%, #f5f4ad 100%); 
+  }
+  
+  
+  /*header*/
+  .header {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color:#244625;
+  /*  background:#3b5f3d;*/
+    display: inline-block;
+    word-spacing: 10px;
+  }
+
+  
+  .church-title {
+    font-family: 'Berkshire Swash',Helvetica, sans-serif;
+    width: 100%;
+    text-align: left;
+    color:rgba(245, 241, 241, 0.973);
+  }
+
+  h1 {
+    padding-left:5%;
+    font-weight: lighter;
+    font-size: 1.7em;
+    transform: scale(1, 1.4);
+  }
+
+  .header-img {
+      position: relative;
+      height : 289px;
+      width : 100%;
+      object-fit: cover;
+  }
+
+
+  .img-text {
+      position: absolute;
+      top: 110px;
+      left: 10%;
+      font-weight: bold;
+      font-size: 1.2em;
+      color: rgba(250, 248, 248, 0.973);
+      text-shadow: 3px 3px 5px rgb(0, 0, 0);
+  }
+
+
+  
+  /*navbar*/
+  .menu {
+    background-color:#244625;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-transform: capitalize;
+    padding: 0.5% 0%;
+  }
+  
+  
+  .menu-list {
+    list-style: none;
+    text-align: center;
+  }
+  
+  
+  .menu-item {
+    color:#fff;
+    padding: 3% 3% 0.5% 3%;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 500;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+  
+  
+  .menu-item:hover {
+    background-color: #75b877;
+    color: #000;
+  }
+  
+  
+  /*hamburger icon will not be displayed in default mode*/
+  .ham-icon {
+    display: none;
+    padding: 0;
+    border: 0;
+  }
+  
+  
+  /*main*/
+  .container {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  
+  #home { 
+    display:flex;
+  }
+
+
+  .service {
+      width:25%;
+      background: #dbe6b5;
+      padding: 2% 2% 2% 2%;
+      text-align: justify;
+      border-left:solid 1px #4CAF50;
+      
+  }
+
+
+  .service h4{
+      text-decoration: underline solid black;;
+  }
+
+  .welcome {
+      padding:2% 5% 5% 5%;
+      width:45%;
+      background: rgba(245, 241, 241, 0.973);
+      text-align: justify;
+  }
+
+  .cards {
+      padding-top: 3%;
+      padding-right: 2%;
+      width: 30%;
+      background: rgba(245, 241, 241, 0.973);
+  }
+
+  .card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    outline: 5px solid rgba(235, 233, 233, 0.973);
+    outline-offset: -5px;
+    position: relative;
+    display: inline-block;
+  }
+
+  .verse-img{
+    width : 100%;
+    height: 280px;
+    object-fit: cover;
+
+  }
+
+  .card h4 {
+      background: #4b814c;
+      padding: 4% 0%;
+      color: rgba(245, 241, 241, 0.973);
+  }
+
+/* On mouse-over, add a deeper shadow */
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+
+/* Add some padding inside the card container */
+  .verse {
+    padding: 0% 3% 3% 3%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    box-sizing: border-box;
+    font-size: 1.1em;
+    color: rgba(250, 248, 248, 0.973);
+    text-shadow: 3px 3px 5px rgb(0, 0, 0);
+  }
+
+  /*About.html style*/
+
+  #about {
+      width:100%;
+      text-align: justify;
+  }
+  
+  .vision {
+      background:#ecf0da;
+      padding:2%;
+      line-height: 1.3em;
+  }
+
+  .vision h4,
+  .belief h4 {
+    padding:1% 1% 1% 5%;
+  }
+
+  .belief {
+      background:#dbe6b5;;
+      padding: 2%;
+  }
+
+  .belief li{
+    padding:2% 0%;
+  }
+  
+  .vision:hover,
+  .belief li:hover{
+      font-weight: bold;
+  }
+
+  
+  
+
+  
+  /*footer*/
+  .icons {
+    margin-top: 0;
+    padding-bottom: 1%;
+  }
+  
+  
+  .icon-link {
+    float: right;
+    padding-left: 1%;
+    padding-right: 1%;
+    font-size: 1.5em;
+    color: #02b3e4;
+  }
+  
+  
+  .icon-link:hover {
+    color:#000;
+  }
+  
+  
+  /**Media Query for Mobile display**/
+  @media screen and (max-width:450px)
+  {
+    .logo {
+      width: 10%;
+      height: 10%;
+    }
+  
+  
+    h1 {
+      font-size: 1.5em;
+    }
+  
+  
+    .menu-list {
+      display: none;
+    }
+  
+  
+    .ham-icon {
+      display: inline-block;
+      position: relative;
+      padding: 1%;
+      color:#fff;
+      background-color: #4CAF50;
+    }
+  
+  
+    /*Drop down nav bar on hover**/
+    .ham-icon:hover + .menu-list,
+    .menu-list:hover { 
+      display: block;
+      position: absolute;
+      opacity: 1;
+      transition-delay: 0.2s;
+    }
+  
+  
+    .menu-item {
+      background-color:rgb(144,238,144);
+      display: block;
+      padding: 10%;
+      color:#000;
+      width: 100px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      float: none;
+      position: relative;
+      z-index: 1;
+      font-weight: 500;
+    }
+  
+  
+    .home-img {
+      height: 70%;
+    }
+  
+  
+    .app {
+      margin: 0;
+      width: 100%;
+    }
+  
+  
+    .project {
+      flex-direction: column;
+    }
+  
+  
+    .icons {
+      text-align: center;
+    }
+  
+  
+    .icon-link {
+      float: none;
+      padding-left: 4%;
+      padding-right: 4%;
+    }
+  }
+  
+  
+  /*Media query for tablet display**/
+  @media screen and (min-width:451px) and (max-width:780px)
+  {
+    .logo {
+      width: 8%;
+      height: 8%;
+    }
+  
+  
+    h1 {
+      font-size: 1.6em;
+    }
+  
+  
+    .menu-item {
+      padding: 1% 7%;
+      font-weight: 500;
+    }
+  
+  
+    .home-img {
+      height: 350px;
+    }
+  
+  
+    #home {
+      width: 50%;
+      margin-top: 3%;
+      order: 0;
+      display: inline-block;
+    }
+  
+  
+    #about {
+      width: 45%;
+      order: 1;
+      float: right;
+    }
+  
+  
+    .abt-para {
+      text-indent: 20%;
+      font-size: 1.25em;
+      line-height: 1.5em;
+      text-align: justify;
+    }
+  
+  
+    #projects {
+      margin-left: 0;
+      margin-right: 0;
+      width: 100%;
+    }
+  
+  
+    .app {
+      width: calc((100%/3 - 12%/3));
+      padding: 2% 2%;
+    }
+  
+  
+    .num1 {
+      order: 2;
+    }
+  
+  
+    .num2 {
+      order: 3;
+    }
+  
+  
+    .num3 {
+      order: 4;
+    }
+  
+  
+    .app-img {
+      height: 70%;
+      overflow: hidden;
+    }
+  
+  
+    .icons {
+      text-align: center;
+    }
+  
+  
+    .icon-link {
+      float: none;
+      padding-left: 4%;
+      padding-right: 4%;
+    }
+  }
+  
