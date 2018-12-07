@@ -4,7 +4,7 @@ body {
     width: 100%;
     height: 100%;
     margin:0;
-    font-family: 'Chakra Petch', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     background: linear-gradient(180deg, #4b814c 0%, #f5f4ad 100%); 
   }
   
@@ -50,7 +50,7 @@ body {
       font-weight: bold;
       font-size: 1.2em;
       color: rgba(250, 248, 248, 0.973);
-      text-shadow: 3px 3px 5px rgb(0, 0, 0);
+      text-shadow: 3px 4px 5px rgb(0, 0, 0);
   }
 
 
@@ -118,16 +118,21 @@ body {
       
   }
 
+  .invite {
+    text-indent: 25px;
+  }
 
   .service h4{
       text-decoration: underline solid black;;
   }
 
   .welcome {
+      text-indent: 25px;
       padding:2% 5% 5% 5%;
       width:45%;
       background: rgba(245, 241, 241, 0.973);
       text-align: justify;
+      line-height: 1.3em;
   }
 
   .cards {
@@ -210,61 +215,105 @@ body {
   }
 
   
-  
+  /*contact page*/
+  #contact {
+    text-align: center;
+    background:#ecf0da;
+    padding:2%;
+    
+  }
+  .phone-email {
+    width :100%;
+  }
+
+  .location {
+    width : 50%;
+    padding-left:25%;
+    padding-right:25%;
+    text-align: center;
+  }
+
+  .phone-email h4,
+  .location h4 {
+    padding:0;
+    text-decoration: underline;
+  }
+
+  .gmap {
+    width: 100%;
+    height: 450px; 
+  }
+
+  .mapouter {
+    height: 450px;
+    width: 100%;
+    text-align: center;
+}
+
+.gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    height: 450px;
+    width: 100%;
+}
 
   
   /*footer*/
-  .icons {
-    margin-top: 0;
-    padding-bottom: 1%;
-  }
-  
-  
-  .icon-link {
-    float: right;
-    padding-left: 1%;
-    padding-right: 1%;
-    font-size: 1.5em;
-    color: #02b3e4;
-  }
-  
-  
-  .icon-link:hover {
-    color:#000;
+  .footer {
+    background:#244625;
+    width:90%;
+    padding: 1.5% 0%;
+    margin-left:5%;
+    margin-right:5%;
   }
   
   
   /**Media Query for Mobile display**/
-  @media screen and (max-width:450px)
-  {
-    .logo {
-      width: 10%;
-      height: 10%;
+  @media screen and (max-width:550px)
+  { 
+    .container,
+    .header,
+    .menu,
+    .footer {
+      width : 100%;
+      margin-left: 0;
+      margin-right: 0;
     }
-  
-  
+
+    .fa-bars {
+      font-size :23px;
+      padding-left : 2%;
+    }
+
     h1 {
-      font-size: 1.5em;
+      font-size: 1.4em;
     }
-  
-  
+
+    .header-img {
+      height : 200px;
+    }
+
+
+   .img-text {
+     font-size: 1em;
+    }
+
+    .menu {
+      padding :0
+    }
+
     .menu-list {
       display: none;
     }
   
-  
     .ham-icon {
       display: inline-block;
       position: relative;
-      padding: 1%;
+      padding:  0.5% 3%;
       color:#fff;
-      background-color: #4CAF50;
     }
   
-  
-    /*Drop down nav bar on hover**/
-    .ham-icon:hover + .menu-list,
-    .menu-list:hover { 
+    .menu-list-click { 
       display: block;
       position: absolute;
       opacity: 1;
@@ -273,139 +322,132 @@ body {
   
   
     .menu-item {
-      background-color:rgb(144,238,144);
+      background-color: #4b814c;
       display: block;
-      padding: 10%;
-      color:#000;
-      width: 100px;
+      padding: 5%;
+      color:#fff;
+      width: 200px;
       box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
       float: none;
       position: relative;
       z-index: 1;
-      font-weight: 500;
+      font-size: 1.1em;
     }
-  
-  
-    .home-img {
-      height: 70%;
-    }
-  
-  
-    .app {
-      margin: 0;
-      width: 100%;
-    }
-  
-  
-    .project {
+    
+    #home {
       flex-direction: column;
     }
-  
-  
-    .icons {
+    
+    .welcome {
+      width:90%;
+      margin:0;
+      order :0;
+    }
+
+    .service {
+      width:95%;
+      order :1;
+    }
+
+    .cards {
+      width :98%;
+      order :2;
+      padding:1%;
       text-align: center;
     }
+
+    .vision,
+    .belief {
+      width :90%;
+      padding:5%;
+    }
   
-  
-    .icon-link {
-      float: none;
-      padding-left: 4%;
-      padding-right: 4%;
+    .location {
+      width : 90%;
+      padding-left:5%;
+      padding-right:5%;
+    }
+    .gmap_canvas,
+    .mapouter,
+    .gmap {
+      height: 350px; 
     }
   }
   
   
   /*Media query for tablet display**/
-  @media screen and (min-width:451px) and (max-width:780px)
+  @media screen and (min-width:551px) and (max-width:780px)
   {
-    .logo {
-      width: 8%;
-      height: 8%;
-    }
-  
-  
-    h1 {
-      font-size: 1.6em;
-    }
-  
-  
-    .menu-item {
-      padding: 1% 7%;
-      font-weight: 500;
-    }
-  
-  
-    .home-img {
-      height: 350px;
-    }
-  
-  
-    #home {
-      width: 50%;
-      margin-top: 3%;
-      order: 0;
-      display: inline-block;
-    }
-  
-  
-    #about {
-      width: 45%;
-      order: 1;
-      float: right;
-    }
-  
-  
-    .abt-para {
-      text-indent: 20%;
-      font-size: 1.25em;
-      line-height: 1.5em;
-      text-align: justify;
-    }
-  
-  
-    #projects {
+    container,
+    .header,
+    .menu,
+    .footer {
+      width : 100%;
       margin-left: 0;
       margin-right: 0;
-      width: 100%;
     }
-  
-  
-    .app {
-      width: calc((100%/3 - 12%/3));
-      padding: 2% 2%;
+
+    h1 {
+      font-size: 1.4em;
     }
-  
-  
-    .num1 {
-      order: 2;
+
+    .header-img {
+      height : 250px;
     }
-  
-  
-    .num2 {
-      order: 3;
+
+   .img-text {
+     font-size: 1.2em;
     }
-  
-  
-    .num3 {
-      order: 4;
+
+    .menu-item {
+      font-size: 1em;
+      padding-left:1.5%;
+      padding-right:1.5%;
     }
-  
-  
-    .app-img {
-      height: 70%;
-      overflow: hidden;
+    
+    #home {
+      flex-wrap: wrap;
     }
-  
-  
-    .icons {
+    
+    .welcome {
+      width:50%;
+      margin:0;
+      order :0;
+    }
+
+    .service {
+      width:95%;
+      order :2;
+    }
+
+    .cards {
+      width :35%;
+      order :1;
+      padding: 12% 2% 2% 2%;
       text-align: center;
     }
+
+    .verse-img {
+      height: 350px;
+    }
+    .vision,
+    .belief {
+      width :90%;
+      padding:5%;
+    }
   
-  
-    .icon-link {
-      float: none;
-      padding-left: 4%;
-      padding-right: 4%;
+    .location {
+      width : 90%;
+      padding-left:5%;
+      padding-right:5%;
+    }
+    .gmap_canvas,
+    .mapouter,
+    .gmap {
+      width: 90%;
+      margin-left:5%;
+      margin-right:5%;
+      height: 320px; 
     }
   }
   

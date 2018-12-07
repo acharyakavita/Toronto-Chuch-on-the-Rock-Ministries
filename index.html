@@ -9,14 +9,14 @@
     <link href='http://fonts.googleapis.com/css?family=Berkshire+Swash' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="style/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Chakra+Petch" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
         crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
 <body>
-    <header class="header">
+    <header class="header" id="header">
         <div class="church-title">
             <h1>Toronto Church On The Rock Ministries</h1>
         </div>
@@ -29,14 +29,14 @@
     </header>
 
     <nav class="menu">
-        <span class="ham-icon"><i class="fas fa-bars fa-2x"></i></span>
+        <span class="ham-icon"><i class="fas fa-bars"></i></span>
         <div class="menu-list">
-            <a class="menu-item" href="#home" selected>Home</a>
+            <a class="menu-item" href="#header" selected>Home</a>
             <a class="menu-item" href="about.html">About Us</a>
             <a class="menu-item" href="#ministries">Ministries</a>
             <a class="menu-item" href="#resources">Resources</a>
             <a class="menu-item" href="#news">News & Events</a>
-            <a class="menu-item" href="#contact">Contact us</a>
+            <a class="menu-item" href="contact.html">Contact us</a>
         </div>
     </nav>
 
@@ -46,7 +46,7 @@
             <div class="service">
                 <div>
                     <h4>Sunday Service</h4>
-                    <p>You Are Invited
+                    <p class="invite">You Are Invited
                         to attend Sunday service with us.
                         You will always feel welcome. Experience the warmth of Christian fellowship and have a new
                         awareness
@@ -55,7 +55,7 @@
                         meet your needs.</p>
                     <h4>Timings</h4>
                     <p>Sunday : 10:30 am</p>
-                    <p>Sunday School: 11:30am to 12:30 pm</p>
+                    <p>Sunday School: 11:30 am to 12:30 pm</p>
                     <h4>Location</h4>
                     <p>223 Eglinton Avenue East,<br>
                         South west corner of Eglinton & Mount Pleasant<br>
@@ -87,8 +87,10 @@
                 </div>
             </div>
         </div>
-
     </main>
+    <footer>
+        <div class="footer"></div>
+    </footer>
 </body>
 <script src="js/app.js"></script>
 
