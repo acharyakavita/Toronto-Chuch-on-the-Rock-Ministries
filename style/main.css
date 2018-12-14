@@ -1,453 +1,486 @@
 /*Css code for Church website*/
 
 body {
-    width: 100%;
-    height: 100%;
-    margin:0;
-    font-family: 'Montserrat', sans-serif;
-    background: linear-gradient(180deg, #4b814c 0%, #f5f4ad 100%); 
-  }
-  
-  
-  /*header*/
-  .header {
-    width: 90%;
-    margin-left: 5%;
-    margin-right: 5%;
-    background-color:#244625;
-  /*  background:#3b5f3d;*/
-    display: inline-block;
-    word-spacing: 10px;
-  }
-
-  
-  .church-title {
-    font-family: 'Berkshire Swash',Helvetica, sans-serif;
-    width: 100%;
-    text-align: left;
-    color:rgba(245, 241, 241, 0.973);
-  }
-
-  h1 {
-    padding-left:5%;
-    font-weight: lighter;
-    font-size: 1.7em;
-    transform: scale(1, 1.4);
-  }
-
-  .header-img {
-      position: relative;
-      height : 289px;
-      width : 100%;
-      object-fit: cover;
-  }
+  width: 100%;
+  height: 100%;
+  margin:0;
+  font-family: 'Montserrat', sans-serif;
+  background: -webkit-gradient(linear, left top, left bottom, from(#4b814c), to(#f5f4ad));
+  background: -webkit-linear-gradient(top, #4b814c 0%, #f5f4ad 100%);
+  background: -o-linear-gradient(top, #4b814c 0%, #f5f4ad 100%);
+  background: linear-gradient(180deg, #4b814c 0%, #f5f4ad 100%); 
+}
 
 
-  .img-text {
-      position: absolute;
-      top: 110px;
-      left: 10%;
-      font-weight: bold;
-      font-size: 1.2em;
-      color: rgba(250, 248, 248, 0.973);
-      text-shadow: 3px 4px 5px rgb(0, 0, 0);
-  }
+/*header*/
+.header {
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  background-color:#244625;
+/*  background:#3b5f3d;*/
+  display: inline-block;
+  word-spacing: 10px;
+}
 
 
-  
-  /*navbar*/
-  .menu {
-    background-color:#244625;
-    width: 90%;
-    margin-left: 5%;
-    margin-right: 5%;
-    text-transform: capitalize;
-    padding: 0.5% 0%;
-  }
-  
-  
-  .menu-list {
-    list-style: none;
-    text-align: center;
-  }
-  
-  
-  .menu-item {
-    color:#fff;
-    padding: 3% 3% 0.5% 3%;
-    text-decoration: none;
-    font-size: 1.2em;
-    font-weight: 500;
-    cursor: pointer;
-    white-space: nowrap;
-  }
-  
-  
-  .menu-item:hover {
-    background-color: #75b877;
-    color: #000;
-  }
-  
-  
-  /*hamburger icon will not be displayed in default mode*/
-  .ham-icon {
-    display: none;
-    padding: 0;
-    border: 0;
-  }
-  
-  
-  /*main*/
-  .container {
-    width: 90%;
-    margin-left: 5%;
-    margin-right: 5%;
-  }
-  
-  #home { 
-    display:flex;
-  }
+.church-title {
+  font-family: 'Berkshire Swash',Helvetica, sans-serif;
+  width: 100%;
+  text-align: left;
+  color:rgba(245, 241, 241, 0.973);
+}
 
+h1 {
+  padding-left:5%;
+  font-weight: lighter;
+  font-size: 1.7em;
+  -webkit-transform: scale(1, 1.4);
+      -ms-transform: scale(1, 1.4);
+          transform: scale(1, 1.4);
+}
 
-  .service {
-      width:25%;
-      background: #dbe6b5;
-      padding: 2% 2% 2% 2%;
-      text-align: justify;
-      border-left:solid 1px #4CAF50;
-      
-  }
-
-  .invite {
-    text-indent: 25px;
-  }
-
-  .service h4{
-      text-decoration: underline solid black;;
-  }
-
-  .welcome {
-      text-indent: 25px;
-      padding:2% 5% 5% 5%;
-      width:45%;
-      background: rgba(245, 241, 241, 0.973);
-      text-align: justify;
-      line-height: 1.3em;
-  }
-
-  .cards {
-      padding-top: 3%;
-      padding-right: 2%;
-      width: 30%;
-      background: rgba(245, 241, 241, 0.973);
-  }
-
-  .card {
-    /* Add shadows to create the "card" effect */
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-    outline: 5px solid rgba(235, 233, 233, 0.973);
-    outline-offset: -5px;
+.header-img {
     position: relative;
-    display: inline-block;
-  }
-
-  .verse-img{
+    height : 289px;
     width : 100%;
-    height: 280px;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
+}
 
-  }
 
-  .card h4 {
-      background: #4b814c;
-      padding: 4% 0%;
-      color: rgba(245, 241, 241, 0.973);
-  }
+.img-text {
+    position: absolute;
+    top: 110px;
+    left: 10%;
+    font-weight: bold;
+    font-size: 1.2em;
+    color: rgba(250, 248, 248, 0.973);
+    text-shadow: 3px 4px 5px rgb(0, 0, 0);
+}
+
+
+
+/*navbar*/
+.menu {
+  background-color:#244625;
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  text-transform: capitalize;
+  padding: 0.5% 0%;
+}
+
+
+.menu-list {
+  list-style: none;
+  text-align: center;
+}
+
+
+.menu-item {
+  color:#fff;
+  padding: 3% 3% 0.5% 3%;
+  text-decoration: none;
+  font-size: 1.2em;
+  font-weight: 500;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+
+.menu-item:hover {
+  background-color: #75b877;
+  color: #000;
+}
+
+
+/*hamburger icon will not be displayed in default mode*/
+.ham-icon {
+  display: none;
+  padding: 0;
+  border: 0;
+}
+
+
+/*main*/
+.container {
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+#home { 
+  display:-webkit-box; 
+  display:-ms-flexbox; 
+  display:flex;
+}
+
+
+.service {
+    width:25%;
+    background: #dbe6b5;
+    padding: 2% 2% 2% 2%;
+    text-align: justify;
+    border-left:solid 1px #4CAF50;
+    
+}
+
+.invite {
+  text-indent: 25px;
+}
+
+.service h4{
+    -webkit-text-decoration: underline solid black;
+            text-decoration: underline solid black;;
+}
+
+.welcome {
+    text-indent: 25px;
+    padding:2% 5% 5% 5%;
+    width:45%;
+    background: rgba(245, 241, 241, 0.973);
+    text-align: justify;
+    line-height: 1.3em;
+}
+
+.cards {
+    padding-top: 3%;
+    padding-right: 2%;
+    width: 30%;
+    background: rgba(245, 241, 241, 0.973);
+}
+
+.card {
+  /* Add shadows to create the "card" effect */
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+          box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  outline: 5px solid rgba(235, 233, 233, 0.973);
+  outline-offset: -5px;
+  position: relative;
+  display: inline-block;
+}
+
+.verse-img{
+  width : 100%;
+  height: 280px;
+  -o-object-fit: cover;
+     object-fit: cover;
+
+}
+
+.card h4 {
+    background: #4b814c;
+    padding: 4% 0%;
+    color: rgba(245, 241, 241, 0.973);
+}
 
 /* On mouse-over, add a deeper shadow */
-  .card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-  }
+.card:hover {
+  -webkit-box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+          box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
 
 /* Add some padding inside the card container */
-  .verse {
-    padding: 0% 3% 3% 3%;
-    position: absolute;
-    top: 0%;
-    left: 0%;
-    box-sizing: border-box;
-    font-size: 1.1em;
-    color: rgba(250, 248, 248, 0.973);
-    text-shadow: 3px 3px 5px rgb(0, 0, 0);
-  }
+.verse {
+  padding: 0% 3% 3% 3%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 1.1em;
+  color: rgba(250, 248, 248, 0.973);
+  text-shadow: 3px 3px 5px rgb(0, 0, 0);
+}
 
-  /*About.html style*/
+/*About.html style*/
 
-  #about {
-      width:100%;
-      text-align: justify;
-  }
-  
-  .vision {
-      background:#ecf0da;
-      padding:2%;
-      line-height: 1.3em;
-  }
+#about {
+    width:100%;
+    text-align: justify;
+}
 
-  .vision h4,
-  .belief h4 {
-    padding:1% 1% 1% 5%;
-  }
-
-  .belief {
-      background:#dbe6b5;;
-      padding: 2%;
-  }
-
-  .belief li{
-    padding:1% 0%;
-  }
-  
-  .vision:hover,
-  .belief li:hover{
-      font-weight: bold;
-  }
-
-  
-  /*contact page*/
-  #contact {
-    text-align: center;
+.vision {
     background:#ecf0da;
     padding:2%;
-    
-  }
-  .phone-email {
-    width :100%;
-  }
+    line-height: 1.3em;
+}
 
-  .location {
-    width : 50%;
-    padding-left:25%;
-    padding-right:25%;
-    text-align: center;
-  }
+.vision h4,
+.belief h4 {
+  padding:1% 1% 1% 5%;
+}
 
-  .phone-email h4,
-  .location h4 {
-    padding:0;
-    text-decoration: underline;
-  }
+.belief {
+    background:#dbe6b5;;
+    padding: 2%;
+}
 
-  .gmap {
-    width: 100%;
-    height: 450px; 
-  }
+.belief li{
+  padding:1% 0%;
+}
 
-  .mapouter {
-    height: 450px;
-    width: 100%;
-    text-align: center;
+.vision:hover,
+.belief li:hover{
+    font-weight: bold;
+}
+
+
+/*contact page*/
+#contact {
+  text-align: center;
+  background:#ecf0da;
+  padding:2%;
+  
+}
+.phone-email {
+  width :100%;
+}
+
+.location {
+  width : 50%;
+  padding-left:25%;
+  padding-right:25%;
+  text-align: center;
+}
+
+.phone-email h4,
+.location h4 {
+  padding:0;
+  text-decoration: underline;
+}
+
+.gmap {
+  width: 100%;
+  height: 450px; 
+}
+
+.mapouter {
+  height: 450px;
+  width: 100%;
+  text-align: center;
 }
 
 .gmap_canvas {
-    overflow: hidden;
-    background: none !important;
-    height: 450px;
-    width: 100%;
+  overflow: hidden;
+  background: none !important;
+  height: 450px;
+  width: 100%;
 }
 
-  
-  /*footer*/
+
+/*footer*/
+.footer {
+  background:#244625;
+  width:90%;
+  padding: 1.5% 0%;
+  margin-left:5%;
+  margin-right:5%;
+}
+
+
+/**Media Query for Mobile display**/
+@media screen and (max-width:550px)
+{ 
+  .container,
+  .header,
+  .menu,
   .footer {
-    background:#244625;
+    width : 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .fa-bars {
+    font-size :23px;
+    padding-left : 2%;
+  }
+
+  h1 {
+    font-size: 1.4em;
+  }
+
+  .header-img {
+    height : 200px;
+  }
+
+
+ .img-text {
+   font-size: 1em;
+  }
+
+  .menu {
+    padding :0
+  }
+
+  .menu-list {
+    display: none;
+  }
+
+  .ham-icon {
+    display: inline-block;
+    position: relative;
+    padding:  0.5% 3%;
+    color:#fff;
+  }
+
+  .menu-list-click { 
+    display: block;
+    position: absolute;
+    opacity: 1;
+    -webkit-transition-delay: 0.2s;
+         -o-transition-delay: 0.2s;
+            transition-delay: 0.2s;
+  }
+
+
+  .menu-item {
+    background-color: #4b814c;
+    display: block;
+    padding: 5%;
+    color:#fff;
+    width: 200px;
+    -webkit-box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    float: none;
+    position: relative;
+    z-index: 1;
+    font-size: 1.1em;
+  }
+  
+  #home {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  
+  .welcome {
     width:90%;
-    padding: 1.5% 0%;
+    margin:0;
+    -webkit-box-ordinal-group :1;
+        -ms-flex-order :0;
+            order :0;
+  }
+
+  .service {
+    width:95%;
+    -webkit-box-ordinal-group :2;
+        -ms-flex-order :1;
+            order :1;
+  }
+
+  .cards {
+    width :98%;
+    -webkit-box-ordinal-group :3;
+        -ms-flex-order :2;
+            order :2;
+    padding:1%;
+    text-align: center;
+  }
+
+  .vision,
+  .belief {
+    width :90%;
+    padding:5%;
+  }
+
+  .location {
+    width : 90%;
+    padding-left:5%;
+    padding-right:5%;
+  }
+  .gmap_canvas,
+  .mapouter,
+  .gmap {
+    height: 350px; 
+  }
+}
+
+
+/*Media query for tablet display**/
+@media screen and (min-width:551px) and (max-width:780px)
+{
+  container,
+  .header,
+  .menu,
+  .footer {
+    width : 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  h1 {
+    font-size: 1.4em;
+  }
+
+  .header-img {
+    height : 250px;
+  }
+
+ .img-text {
+   font-size: 1.2em;
+  }
+
+  .menu-item {
+    font-size: 1em;
+    padding-left:1.5%;
+    padding-right:1.5%;
+  }
+  
+  #home {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  
+  .welcome {
+    width:50%;
+    margin:0;
+    -webkit-box-ordinal-group :1;
+        -ms-flex-order :0;
+            order :0;
+  }
+
+  .service {
+    width:95%;
+    -webkit-box-ordinal-group :3;
+        -ms-flex-order :2;
+            order :2;
+  }
+
+  .cards {
+    width :35%;
+    -webkit-box-ordinal-group :2;
+        -ms-flex-order :1;
+            order :1;
+    padding: 12% 2% 2% 2%;
+    text-align: center;
+  }
+
+  .verse-img {
+    height: 350px;
+  }
+  .vision,
+  .belief {
+    width :90%;
+    padding:5%;
+  }
+
+  .location {
+    width : 90%;
+    padding-left:5%;
+    padding-right:5%;
+  }
+  .gmap_canvas,
+  .mapouter,
+  .gmap {
+    width: 90%;
     margin-left:5%;
     margin-right:5%;
+    height: 320px; 
   }
-  
-  
-  /**Media Query for Mobile display**/
-  @media screen and (max-width:550px)
-  { 
-    .container,
-    .header,
-    .menu,
-    .footer {
-      width : 100%;
-      margin-left: 0;
-      margin-right: 0;
-    }
-
-    .fa-bars {
-      font-size :23px;
-      padding-left : 2%;
-    }
-
-    h1 {
-      font-size: 1.4em;
-    }
-
-    .header-img {
-      height : 200px;
-    }
-
-
-   .img-text {
-     font-size: 1em;
-    }
-
-    .menu {
-      padding :0
-    }
-
-    .menu-list {
-      display: none;
-    }
-  
-    .ham-icon {
-      display: inline-block;
-      position: relative;
-      padding:  0.5% 3%;
-      color:#fff;
-    }
-  
-    .menu-list-click { 
-      display: block;
-      position: absolute;
-      opacity: 1;
-      transition-delay: 0.2s;
-    }
-  
-  
-    .menu-item {
-      background-color: #4b814c;
-      display: block;
-      padding: 5%;
-      color:#fff;
-      width: 200px;
-      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-      float: none;
-      position: relative;
-      z-index: 1;
-      font-size: 1.1em;
-    }
-    
-    #home {
-      flex-direction: column;
-    }
-    
-    .welcome {
-      width:90%;
-      margin:0;
-      order :0;
-    }
-
-    .service {
-      width:95%;
-      order :1;
-    }
-
-    .cards {
-      width :98%;
-      order :2;
-      padding:1%;
-      text-align: center;
-    }
-
-    .vision,
-    .belief {
-      width :90%;
-      padding:5%;
-    }
-  
-    .location {
-      width : 90%;
-      padding-left:5%;
-      padding-right:5%;
-    }
-    .gmap_canvas,
-    .mapouter,
-    .gmap {
-      height: 350px; 
-    }
-  }
-  
-  
-  /*Media query for tablet display**/
-  @media screen and (min-width:551px) and (max-width:780px)
-  {
-    container,
-    .header,
-    .menu,
-    .footer {
-      width : 100%;
-      margin-left: 0;
-      margin-right: 0;
-    }
-
-    h1 {
-      font-size: 1.4em;
-    }
-
-    .header-img {
-      height : 250px;
-    }
-
-   .img-text {
-     font-size: 1.2em;
-    }
-
-    .menu-item {
-      font-size: 1em;
-      padding-left:1.5%;
-      padding-right:1.5%;
-    }
-    
-    #home {
-      flex-wrap: wrap;
-    }
-    
-    .welcome {
-      width:50%;
-      margin:0;
-      order :0;
-    }
-
-    .service {
-      width:95%;
-      order :2;
-    }
-
-    .cards {
-      width :35%;
-      order :1;
-      padding: 12% 2% 2% 2%;
-      text-align: center;
-    }
-
-    .verse-img {
-      height: 350px;
-    }
-    .vision,
-    .belief {
-      width :90%;
-      padding:5%;
-    }
-  
-    .location {
-      width : 90%;
-      padding-left:5%;
-      padding-right:5%;
-    }
-    .gmap_canvas,
-    .mapouter,
-    .gmap {
-      width: 90%;
-      margin-left:5%;
-      margin-right:5%;
-      height: 320px; 
-    }
-  }
-  
+}
