@@ -290,7 +290,7 @@ h1 {
 }
 
 /**Media Query for Mobile display**/
-@media screen and (max-width:550px)
+@media screen and (max-width:620px)
 { 
   .container,
   .header,
@@ -409,7 +409,7 @@ h1 {
 
 
 /*Media query for tablet display**/
-@media screen and (min-width:551px) and (max-width:780px)
+@media screen and (min-width:621px) and (max-width:1055px)
 {
   container,
   .header,
