@@ -88,7 +88,7 @@ h1 {
   white-space: nowrap;
 }
 
-
+.active,
 .menu-item:hover {
   background-color: #75b877;
   color: #000;
@@ -282,6 +282,12 @@ h1 {
   margin-right:5%;
 }
 
+#news,
+#resources,
+#ministries {
+  height: 400px;
+  text-align: center;
+}
 
 /**Media Query for Mobile display**/
 @media screen and (max-width:550px)

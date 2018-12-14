@@ -30,21 +30,30 @@ function addVerse(verse) {
     content.textContent = verse.verse.details.text;
 }
 
-
+/*this functionality display the nav bar in mobile view*/
 let menu = (function () {
     let hamburger = document.querySelector('.ham-icon');
+    let clickFlag = false;
     hamburger.addEventListener('click', function () {
         let menu = document.querySelector(".menu-list");
         let menuList = document.querySelector(".menu-list-click");
-        console.log(menuList)
-        if (menu.style.display === "" && menuList===null) {
+        if (menuList) {
+            menu.classList.remove('menu-list-click');
+        }
+        else {
             menu.classList.add('menu-list-click');
-        } 
-        else{
-            menuList.classList.remove('menu-list-click');
-            console.log('jio')
+            clickFlag = true;
+        }
+        if (clickFlag === true) {
+            window.addEventListener('click', function (event) {
+                if (!(event.target.classList.contains('menuList') || event.target.classList.contains('menu')
+                    || event.target.classList.contains('hamburger') || event.target.classList.contains('fa-bars'))) {
+                    menu.classList.remove('menu-list-click');
+                    clickFlag = false;
+                }
+            })
         }
     })
-})();
 
+})();
 
