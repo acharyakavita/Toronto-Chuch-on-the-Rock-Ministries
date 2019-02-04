@@ -2,6 +2,7 @@
 
 This is a website I developed for a friend's church - Toronto Church on the Rock Minitries.
 This project is written using HTML5, CSS, jQuery and Java script ES6.
+Live :http://www.torontochurchontherock.com/
 
 # steps to install and Run :
 1. Download/clone the project from this repository
